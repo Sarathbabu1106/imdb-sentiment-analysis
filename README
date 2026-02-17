@@ -29,8 +29,32 @@ IMDB-Sentiment-Analysis/
 ├── requirements.txt          # Dependencies
 ├── app.py                    # Streamlit deployment script
 └── README.md                 # Project documentation
-## 🚀 How to Use
-1. **Installation:**
-   ```bash
 
-   pip install pandas scikit-learn joblib nltk streamlit
+## 🚀 Deployment
+
+This project is deployed on **Streamlit Cloud** for live demo access.
+
+👉 **[Try the Live Demo Here](https://imdb-sentiment-analysis-mmjbg9euvsupkwbvrggsa3.streamlit.app/)**  
+
+Users can input any movie review and instantly see whether the sentiment is **Positive** or **Negative**.
+
+---
+
+## ▶️ How to Run Locally
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Sarathbabu1106/imdb-sentiment-analysis.git
+   cd imdb-sentiment-analysis
+
+2. Install dependencies:
+   pip install -r requirements.txt
+
+3. Run the Streamlit app:
+   streamlit run app.py
+
+4. Or test in CLI mode:
+   python predict.py
+
+
+
