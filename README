@@ -17,13 +17,20 @@ A high-performance sentiment classifier built with Python that predicts whether 
 - **NLTK** (Stemming & Stopword removal)
 - **Pandas** (Data handling)
 - **Joblib** (Model persistence)
+- **Streamlit** (Deployment UI)
 
 ## 📁 File Structure
-- `TrainLogisRegre.py`: The training engine. Cleans the data, trains the model, and saves the "brain."
-- `predict.py`: A lightweight script for real-time user testing.
-- `requirements.txt`: List of necessary libraries.
-
+IMDB-Sentiment-Analysis/
+│
+├── TrainLogisRegre.py        # Training engine (cleans data, trains model, saves .pkl)
+├── predict.py                # Local CLI testing script
+├── sentiment_model.pkl       # Trained Logistic Regression model
+├── tfidf_vectorizer.pkl      # TF-IDF vectorizer
+├── requirements.txt          # Dependencies
+├── app.py                    # Streamlit deployment script
+└── README.md                 # Project documentation
 ## 🚀 How to Use
 1. **Installation:**
    ```bash
-   pip install pandas scikit-learn joblib nltk
+
+   pip install pandas scikit-learn joblib nltk streamlit
