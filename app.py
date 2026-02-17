@@ -3,7 +3,8 @@ import joblib
 
 # Load model and vectorizer
 model = joblib.load("sentiment_model.pkl")
-vectorizer = joblib.load("tfidf.pkl")
+vectorizer = joblib.load("tfidf_vectorizer.pkl")
+
 
 # Streamlit UI
 st.title("🎬 IMDB Sentiment Analysis")
@@ -20,3 +21,4 @@ if st.button("Predict"):
         st.subheader(f"Sentiment: {sentiment}")
     else:
         st.warning("Please enter a review before predicting.")
+
